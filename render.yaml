@@ -2,10 +2,11 @@ services:
   - type: web
     name: strapi
     env: node
-    plan: starter
+    plan: standard
     buildCommand: yarn install && yarn build
     startCommand: yarn develop
     healthCheckPath: /_health
+    autoDeploy: false
     disk:
       name: strapi-uploads
       mountPath: /opt/render/project/src/public/uploads
