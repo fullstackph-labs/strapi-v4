@@ -26,5 +26,5 @@ services:
         generateValue: true
 
 databases:
-  - name: strapi2
-    plan: free
+  - name: strapi
+    plan: starter
