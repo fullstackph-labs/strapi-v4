@@ -1,0 +1,82 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rakets",
+  "info": {
+    "singularName": "raket",
+    "pluralName": "rakets",
+    "displayName": "Raket",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "raketeer": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::raketeer.raketeer",
+      "inversedBy": "rakets"
+    },
+    "extras": {
+      "type": "component",
+      "repeatable": true,
+      "component": "raket.extra"
+    },
+    "price": {
+      "type": "float"
+    },
+    "deliveryTime": {
+      "type": "float"
+    },
+    "description": {
+      "type": "text"
+    },
+    "briefingDetails": {
+      "type": "text"
+    },
+    "media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "searchTags": {
+      "type": "json"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::raket-category.raket-category",
+      "inversedBy": "rakets"
+    },
+    "listOrder": {
+      "type": "integer",
+      "min": 0,
+      "default": 0
+    },
+    "embeds": {
+      "type": "component",
+      "repeatable": true,
+      "component": "raket.embed"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": false
+    }
+  }
+}

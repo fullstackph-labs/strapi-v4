@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_raket_category_tags",
+  "info": {
+    "displayName": "Tag",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

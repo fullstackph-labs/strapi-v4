@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "raket_categories",
+  "info": {
+    "singularName": "raket-category",
+    "pluralName": "raket-categories",
+    "displayName": "Raket Category",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "rakets": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::raket.raket",
+      "mappedBy": "category"
+    },
+    "tags": {
+      "type": "component",
+      "repeatable": true,
+      "component": "raket-category.tag"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reviews",
+  "info": {
+    "singularName": "review",
+    "pluralName": "reviews",
+    "displayName": "Review",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "numberOfStars": {
+      "type": "integer",
+      "max": 5,
+      "min": 1
+    },
+    "raketeer": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::raketeer.raketeer",
+      "inversedBy": "reviews"
+    },
+    "reviewer": {
+      "type": "string"
+    },
+    "reviewerImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "text": {
+      "type": "text"
+    }
+  }
+}

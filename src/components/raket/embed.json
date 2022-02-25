@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_raket_embeds",
+  "info": {
+    "displayName": "Embed",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "link": {
+      "type": "string"
+    }
+  }
+}

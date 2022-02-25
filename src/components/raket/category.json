@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_raket_categories",
+  "info": {
+    "displayName": "Category",
+    "icon": "border-all",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "selected": {
+      "type": "enumeration",
+      "enum": [
+        "CatOne",
+        "CatTwo",
+        "CatThree",
+        "CatFour"
+      ],
+      "default": "CatOne"
+    }
+  }
+}

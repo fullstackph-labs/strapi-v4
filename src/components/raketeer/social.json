@@ -1,0 +1,148 @@
+{
+  "collectionName": "components_raketeer_socials",
+  "info": {
+    "displayName": "social",
+    "icon": "comment",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "facebook": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "tiktok": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "instagram": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "youtube": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "twitter": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "pinterest": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "linkedin": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "twitch": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "vimeo": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "apple": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "applePodcast": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "amazonMusic": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "spotify": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "soundcloud": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "pandora": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "lastfm": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "dribbble": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "behance": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "deviant": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "fiveHundredPx": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "flickr": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "shopee": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "lazada": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "carousell": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "eBay": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "appleStore": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "googlePlay": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "website": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "github": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "reddit": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "medium": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "airbnb": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "angelList": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "quora": {
+      "type": "string",
+      "required": false,
+      "maxLength": 100
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "socials",
+  "info": {
+    "singularName": "social",
+    "pluralName": "socials",
+    "displayName": "Social",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fields": {
+      "type": "component",
+      "repeatable": false,
+      "component": "raketeer.social",
+      "required": false
+    },
+    "raketeer": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::raketeer.raketeer",
+      "inversedBy": "social"
+    }
+  }
+}

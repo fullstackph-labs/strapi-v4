@@ -1,0 +1,111 @@
+{
+  "kind": "collectionType",
+  "collectionName": "raketeers",
+  "info": {
+    "singularName": "raketeer",
+    "pluralName": "raketeers",
+    "displayName": "Raketeer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "featuredPhotos": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "isVerified": {
+      "type": "boolean",
+      "default": false
+    },
+    "rakets": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::raket.raket",
+      "mappedBy": "raketeer"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "raketeer"
+    },
+    "firstName": {
+      "type": "string",
+      "required": false,
+      "default": "Rolando"
+    },
+    "lastName": {
+      "type": "string",
+      "required": false,
+      "default": "Plaza"
+    },
+    "headline": {
+      "type": "string",
+      "default": "Strike a great first impression! Produce a short, attention-getting intro.🌟 (Ayusin mo baka mabasa ni crush.) 😜"
+    },
+    "bio": {
+      "type": "richtext",
+      "default": "The spotlight is yours! ✨ Share career highlights and fun facts about yourself. We’re all ears. 👂 (Effort-an mo para more chances of getting hired.)"
+    },
+    "reviews": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::review.review",
+      "mappedBy": "raketeer"
+    },
+    "country": {
+      "type": "enumeration",
+      "enum": [
+        "Philippines",
+        "Abroad"
+      ],
+      "default": "Philippines"
+    },
+    "city": {
+      "type": "string",
+      "default": "Pampanga"
+    },
+    "region": {
+      "type": "string",
+      "default": "Central Luzon"
+    },
+    "social": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::social.social",
+      "mappedBy": "raketeer"
+    },
+    "theme": {
+      "type": "string",
+      "default": "freelancer"
+    },
+    "color": {
+      "type": "string",
+      "default": "empanada"
+    },
+    "font": {
+      "type": "string",
+      "default": "werpa"
+    },
+    "firstSignup": {
+      "type": "boolean",
+      "default": true,
+      "required": false
+    }
+  }
+}
